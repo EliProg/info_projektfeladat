@@ -34,8 +34,6 @@ for name, group in df.groupby('class'):
 
 X = np.array(X)
 Y = np.array(Y)
-
-# 5. One-Hot Encoding a címkékre (Keras elvárás a többosztályos osztályozáshoz)
 Y = to_categorical(Y, num_classes=NUM_CLASSES)
 
 print(f"X: {X.shape}")
